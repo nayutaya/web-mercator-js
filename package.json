@@ -1,6 +1,6 @@
 {
   "name": "web-mercator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utilities for Web Mercator Projection.",
   "main": "lib/index.js",
   "scripts": {
