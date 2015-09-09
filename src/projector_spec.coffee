@@ -22,16 +22,19 @@ describe "Projector", ->
       expect(Projector.myToLat( 0.0)).toBeCloseTo(  0.0000, 15)
       expect(Projector.myToLat(-1.0)).toBeCloseTo(-85.0511,  4)
 
+  describe ".mxToLng", ->
+    it "メルカトルX座標を経度に変換する", ->
+      expect(Projector.mxToLng(+1.5)).toBeCloseTo( -90.0, 15)
+      expect(Projector.mxToLng(+1.0)).toBeCloseTo(-180.0, 15)
+      expect(Projector.mxToLng(+0.5)).toBeCloseTo( +90.0, 15)
+      expect(Projector.mxToLng( 0.0)).toBeCloseTo(   0.0, 15)
+      expect(Projector.mxToLng(-0.5)).toBeCloseTo( -90.0, 15)
+      expect(Projector.mxToLng(-1.0)).toBeCloseTo(-180.0, 15)
+      expect(Projector.mxToLng(-1.5)).toBeCloseTo( +90.0, 15)
+
   ###
-  describe(".mxToLng", function() {
-    it("メルカトルX座標を経度に変換する", function() {
-      assertRoughlyEquals( -90.0, Projector.mxToLng(+1.5), 1e-15);
-      assertRoughlyEquals(-180.0, Projector.mxToLng(+1.0), 1e-15);
-      assertRoughlyEquals( +90.0, Projector.mxToLng(+0.5), 1e-15);
-      assertRoughlyEquals(   0.0, Projector.mxToLng( 0.0), 1e-15);
-      assertRoughlyEquals( -90.0, Projector.mxToLng(-0.5), 1e-15);
-      assertRoughlyEquals(-180.0, Projector.mxToLng(-1.0), 1e-15);
-      assertRoughlyEquals( +90.0, Projector.mxToLng(-1.5), 1e-15);
+  describe(, function() {
+    it(, function() {
     });
   });
   ###
