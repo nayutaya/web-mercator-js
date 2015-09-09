@@ -8,3 +8,24 @@ module.exports = class Projector
 
   @latToMy: (lat)->
     return atanh(Math.sin(lat * DEG2RAD)) / Math.PI
+
+  ###
+  // 経度をメルカトルX座標に変換する
+  projector.lngToMx = function(lng) {
+    return lng / 180.0;
+  };
+
+  // メルカトルY座標を緯度に変換する
+  projector.myToLat = function(my) {
+    return Math.asin(math.tanh(my * Math.PI)) * RAD2DEG;
+  };
+
+  // メルカトルX座標を経度に変換する
+  projector.mxToLng = function(mx) {
+    var x = math.mod(mx, 2.0) - 2.0;
+    if ( x < -1.0 ) {
+      x += 2.0;
+    }
+    return x * 180.0;
+  };
+  ###
