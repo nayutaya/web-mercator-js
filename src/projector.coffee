@@ -6,15 +6,15 @@ module.exports = class Projector
   # 双曲線逆正接を求める
   atanh = (x)-> Math.log((1 + x) / (1 - x)) / 2
 
+  # 緯度をメルカトルY座標に変換する
   @latToMy: (lat)->
     return atanh(Math.sin(lat * DEG2RAD)) / Math.PI
 
-  ###
-  // 経度をメルカトルX座標に変換する
-  projector.lngToMx = function(lng) {
-    return lng / 180.0;
-  };
+  # 経度をメルカトルX座標に変換する
+  @lngToMx: (lng)->
+    return lng / 180.0
 
+  ###
   // メルカトルY座標を緯度に変換する
   projector.myToLat = function(my) {
     return Math.asin(math.tanh(my * Math.PI)) * RAD2DEG;
