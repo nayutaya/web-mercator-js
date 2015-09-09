@@ -31,10 +31,3 @@ describe "Projector", ->
       expect(Projector.mercatorXToLongitude(-0.5)).toBeCloseTo( -90.0, 15)
       expect(Projector.mercatorXToLongitude(-1.0)).toBeCloseTo(-180.0, 15)
       expect(Projector.mercatorXToLongitude(-1.5)).toBeCloseTo( +90.0, 15)
-
-  ###
-  describe(, function() {
-    it(, function() {
-    });
-  });
-  ###
