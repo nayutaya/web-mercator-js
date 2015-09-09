@@ -1,3 +1,3 @@
 
 module.exports = class WebMercator
-  # TODO:
+  @Projector = require "./Projector"
