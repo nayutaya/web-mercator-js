@@ -1,3 +1,3 @@
 
 module.exports = class WebMercator
-  @Projector = require "./Projector"
+  @Projector = require "./projector"

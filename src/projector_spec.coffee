@@ -1,5 +1,5 @@
 
-Projector = require "./Projector"
+Projector = require "./projector"
 
 describe "Projector", ->
   describe ".latitudeToMercatorY", ->
