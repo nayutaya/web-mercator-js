@@ -3,4 +3,4 @@ index = require "./index"
 
 describe "index", ->
   it "", ->
-    # TODO:
+    expect(index.Projector).toEqual(jasmine.any(Function))
