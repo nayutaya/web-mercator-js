@@ -7,6 +7,18 @@
 
 Utilities for Web Mercator Projection.
 
+## Installation
+
+```
+$ npm install web-mercator
+```
+
+## Running tests
+
+```
+$ npm test
+```
+
 ## License
 
 MIT License
