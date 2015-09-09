@@ -15,19 +15,19 @@ module.exports = class Projector
   atanh = (x)-> Math.log((1 + x) / (1 - x)) / 2
 
   # 緯度をメルカトルY座標に変換する
-  @latToMy: (lat)->
+  @latitudeToMercatorY: (lat)->
     return atanh(Math.sin(lat * DEG2RAD)) / Math.PI
 
   # 経度をメルカトルX座標に変換する
-  @lngToMx: (lng)->
+  @longitudeToMercatorX: (lng)->
     return lng / 180.0
 
   # メルカトルY座標を緯度に変換する
-  @myToLat: (my)->
+  @mercatorYToLatitude: (my)->
     return Math.asin(tanh(my * Math.PI)) * RAD2DEG
 
   # メルカトルX座標を経度に変換する
-  @mxToLng: (mx)->
+  @mercatorXToLongitude: (mx)->
     x  = (mx %% 2.0) - 2.0
     x += 2.0 if x < -1.0
     return x * 180.0
