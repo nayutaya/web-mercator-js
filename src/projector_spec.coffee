@@ -25,7 +25,7 @@ describe "Projector", ->
   describe ".mercatorXToLongitude", ->
     it "メルカトルX座標を経度に変換する", ->
       expect(Projector.mercatorXToLongitude(+1.5)).toBeCloseTo( -90.0, 15)
-      expect(Projector.mercatorXToLongitude(+1.0)).toBeCloseTo(-180.0, 15)
+      expect(Projector.mercatorXToLongitude(+1.0)).toBeCloseTo(+180.0, 15)
       expect(Projector.mercatorXToLongitude(+0.5)).toBeCloseTo( +90.0, 15)
       expect(Projector.mercatorXToLongitude( 0.0)).toBeCloseTo(   0.0, 15)
       expect(Projector.mercatorXToLongitude(-0.5)).toBeCloseTo( -90.0, 15)

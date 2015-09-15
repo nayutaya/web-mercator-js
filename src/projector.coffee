@@ -34,6 +34,7 @@ module.exports = class Projector
 
   # メルカトルX座標を経度に変換する
   @mercatorXToLongitude: (mercatorX)->
-    x  = (mercatorX %% 2.0) - 2.0
-    x += 2.0 if x < -1.0
+    x = mercatorX
+    x += 2.0 while ( x < -1.0 )
+    x -= 2.0 while ( x > +1.0 )
     return x * 180.0
