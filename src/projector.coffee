@@ -21,12 +21,12 @@ module.exports = class Projector
   atanh = (x)-> log((1 + x) / (1 - x)) / 2
 
   # 緯度をメルカトルY座標に変換する
-  @latitudeToMercatorY: (latitude)->
-    return atanh(sin(latitude * DEGREE_TO_RADIAN)) / PI
+  @latitudeToMercatorY: (latitudeInDegrees)->
+    return atanh(sin(latitudeInDegrees * DEGREE_TO_RADIAN)) / PI
 
   # 経度をメルカトルX座標に変換する
-  @longitudeToMercatorX: (longitude)->
-    return longitude / 180.0
+  @longitudeToMercatorX: (longitudeInDegrees)->
+    return longitudeInDegrees / 180.0
 
   # メルカトルY座標を緯度に変換する
   @mercatorYToLatitude: (mercatorY)->
