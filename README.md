@@ -24,3 +24,8 @@ $ npm test
 ## License
 
 MIT License
+
+## Other languages
+
+* JavaScript: [nayutaya/web-mercator-js](https://github.com/nayutaya/web-mercator-js)
+* Swift: [nayutaya/web-mercator-swift](https://github.com/nayutaya/web-mercator-swift)
