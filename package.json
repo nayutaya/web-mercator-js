@@ -1,24 +1,11 @@
 {
   "name": "web-mercator",
-  "version": "1.1.0",
   "description": "Utilities for Web Mercator Projection.",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nayutaya/web-mercator-js.git"
-  },
-  "keywords": [
-    "mercator"
-  ],
+  "version": "1.1.0",
   "author": "Yuya Kato (Nayutaya Inc.)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nayutaya/web-mercator-js/issues"
   },
-  "homepage": "https://github.com/nayutaya/web-mercator-js",
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "del": "^2.0.1",
@@ -27,5 +14,18 @@
     "gulp-jasmine": "^2.0.1",
     "gulp-util": "^3.0.6",
     "jasmine": "^2.3.2"
+  },
+  "homepage": "https://github.com/nayutaya/web-mercator-js",
+  "keywords": [
+    "mercator"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayutaya/web-mercator-js.git"
+  },
+  "scripts": {
+    "test": "gulp"
   }
 }
